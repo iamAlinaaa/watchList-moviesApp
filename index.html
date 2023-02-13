@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Keeper</title>
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+            <div class="container">
+                <p><img class="logo-img" src="images/cherry.png">Movie <a href="http://localhost:3000/watchlist"><button class="button-search-movie">WatchList</button></a></span></p>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Enter Movie Title..." id="movie-search-box"
+                    onkeyup="findMovies()" onclick="findMovies()">
+
+                <div class="search-list" id="search-list">
+                    <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="aladdin.jpg">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>Info</h3>
+                            <p>Year</p>
+                        </div>
+                    </div>  -->
+                </div>
+
+            </div>
+        </div>
+        <!-- end of search container -->
+
+        <!-- result container -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!-- Default Information about movie -->
+                    <!-- <div class="movie-poster">
+                        <img src="images/aladdin.jpg" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">App Info</h3>
+                        <button class="button-add-to-list" id="button-add-to-list" type="submit"><i class="fa-solid fa-plus"></i> Add</button>
+                        <a href="http://localhost:3000/watchlist"><button class="button-my-watch-list" id="button-my-watch-list" type="submit">My Watch List</button></a>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year: 1992</li>
+                            <li class="rated">Ratings: G</li>
+                            <li class="released">Released: 25 Nov 1992</li>
+                        </ul>
+                        <p class="genre"><b>Genre: </b>Animation, Adventure, Comedy</p>
+                        <p class="writer"><b>Writer: </b>Ron Clements, John Musker, Ted Elliott</p>
+                        <p class="actors"><b>Actors: </b>Scott Weinger, Robin Williams, Linda Larkin</p>
+                        <p class="plot"><b>Plot: </b>A kindhearted street urchin and a power-hungry Grand Vizier vie for
+                            a magic lamp that has the power to make their deepest wishes come true.</p>
+                        <p class="language"><b>Language: </b>English</p>
+                        <p class="awards"><i class="fa-solid fa-award"></i>Won 2 Oscars. 34 wins & 22 nominations tota</p>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- end of result container -->
+    </div>
+
+</body>
+
+</html>
